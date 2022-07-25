@@ -83,10 +83,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🗂️Total File :- {(len_results)} </b>\n<b>🎥Movie Name :-</b> <code>{query}</code>",   ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🗂️Total File :- {(len_results)} </b>\n<b>🎥Movie Name :-</b> <code>{query}</code> ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🗂️Total File :- {(len_results)} </b>\n<b>🎥Movie Name :-</b> <code>{query}</code>",  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🗂️Total File :- {(len_results)} </b>\n<b>🎥Movie Name :-</b> <code>{query}</code> ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
