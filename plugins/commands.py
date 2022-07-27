@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/Movie_maniacs00'),
-                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/MMCINEMACHAKKU')
+                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1'),
+                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+2BYjyfdJTvk3ODVl')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷 𝙷𝙴𝚁𝙴", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("𝙶𝚁𝙾𝚄𝙿", url="https://t.me/MMCINEMACHAKKU")
+                        InlineKeyboardButton("𝙶𝚁𝙾𝚄𝙿", url="https://t.me/+2BYjyfdJTvk3ODVl")
                     ],
                     [
                         InlineKeyboardButton("😄𝙰𝙱𝙾𝚄𝚃", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿-1', url='https://t.me/Movie_maniacs00'),
-            InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿-2', url='https://t.me/MMCINEMACHAKKU')
+            InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+2BYjyfdJTvk3ODVl'),
+            InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
         ]
         ]
-    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n𝙶𝚁𝙾𝚄𝙿-1 : <a href='https://t.me/Movie_maniacs00'>Click here</a>\n𝙶𝚁𝙾𝚄𝙿-2 : <a href='https://t.me/Movie_maniacs00'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="Language : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n𝙶𝚁𝙾𝚄𝙿 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>Click here</a>\n𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/+dpy81hS3vqdkMDI1'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
