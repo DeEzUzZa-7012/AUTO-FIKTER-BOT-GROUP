@@ -276,11 +276,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿-1', url='https://t.me/Movie_maniacs00'),
-                    InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿-2', url='https://t.me/MMCINEMACHAKKU')
+                    InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+2BYjyfdJTvk3ODVl'),
+                    InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
                 ]
                 ]
-            await query.message.edit(text="𝙶𝚁𝙾𝚄𝙿-1 : <a href='https://t.me/Movie_maniacs00'>Click here</a>\n𝙶𝚁𝙾𝚄𝙿-2 : <a href='https://t.me/MMCINEMACHAKKU'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="𝙶𝚁𝙾𝚄𝙿 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>Click here</a>\n𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -301,8 +301,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/Movie_maniacs00'),
-                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/malayali00l')
+                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+2BYjyfdJTvk3ODVl'),
+                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
                     ]
                     ]
                 
@@ -333,8 +333,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/Movie_maniacs00'),
-                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/malayali00l')
+                        InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+2BYjyfdJTvk3ODVl'),
+                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
                     ]
                     ]
                 
