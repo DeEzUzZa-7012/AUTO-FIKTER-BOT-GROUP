@@ -277,7 +277,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+0uZ5_5FWltEwZTI1'),
-                    InlineKeyboardButton(("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
+                    InlineKeyboardButton("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                 ]
                 ]
             await query.message.edit(text="𝙶𝚁𝙾𝚄𝙿 : <a href='https://t.me/+0uZ5_5FWltEwZTI1'>Click here</a>\n𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -302,7 +302,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+0uZ5_5FWltEwZTI1'),
-                        InlineKeyboardButton(("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
+                        InlineKeyboardButton("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                     ]
                     ]
                 
@@ -334,7 +334,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+0uZ5_5FWltEwZTI1'),
-                        InlineKeyboardButton(("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
+                        InlineKeyboardButton("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                     ]
                     ]
                 
