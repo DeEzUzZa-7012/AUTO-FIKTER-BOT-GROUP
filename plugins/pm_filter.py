@@ -83,10 +83,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🌀 Hey :- {message.from_user.mention}</b>\n<b>🎥Movie Name :-</b>{search}­\n🎭 Genres:- {random.choice(GENRES)}­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🌀 Hey :- {message.from_user.mention}</b>\n<b>🎥Movie Name :-</b>{search}­­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­\n🎭 Genres:- {random.choice(GENRES)}  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­ ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -102,9 +102,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­\n🎭 Genres:- {random.choice(GENRES)}   ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­\n🎭 Genres:- {random.choice(GENRES)}  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­ ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -149,9 +149,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}\­n🎭 Genres:- {random.choice(GENRES)}  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}\­n🎭 Genres:- {random.choice(GENRES)}  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search} ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -167,9 +167,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"­<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}\­n🎭 Genres:- {random.choice(GENRES)}  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"­<b>🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search} ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>­🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­\n🎭 Genres:- ­{random.choice(GENRES)}  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>­🌀 Hey :- {message.from_user.mention} </b>\n<b>🎥Movie Name :-</b>{search}­ ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
@@ -277,7 +277,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+0uZ5_5FWltEwZTI1'),
-                    InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
+                    InlineKeyboardButton(("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                 ]
                 ]
             await query.message.edit(text="𝙶𝚁𝙾𝚄𝙿 : <a href='https://t.me/+0uZ5_5FWltEwZTI1'>Click here</a>\n𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -302,7 +302,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+0uZ5_5FWltEwZTI1'),
-                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
+                        InlineKeyboardButton(("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                     ]
                     ]
                 
@@ -334,7 +334,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('𝙶𝚁𝙾𝚄𝙿', url='https://t.me/+0uZ5_5FWltEwZTI1'),
-                        InlineKeyboardButton('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+dpy81hS3vqdkMDI1')
+                        InlineKeyboardButton(("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                     ]
                     ]
                 
