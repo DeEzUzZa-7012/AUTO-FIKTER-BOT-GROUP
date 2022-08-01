@@ -280,7 +280,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton("𝗖𝗹𝗼𝘀𝗲", callback_data="close_data")
                 ]
                 ]
-            await query.message.edit(text="𝙶𝚁𝙾𝚄𝙿 : <a href='https://t.me/+0uZ5_5FWltEwZTI1'>Click here</a>\n𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="○𝖬𝗒 𝖭𝖺𝗆𝖾 : <a href='https://t.me/+MQ34HqhF9ZJmYjRl'>AUTO Filter Bot</a>𝙶𝚁𝙾𝚄𝙿 : <ahref='https://t.me/+2BYjyfdJTvk3ODVl'>GROUP</a>○\n𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/+2BYjyfdJTvk3ODVl'>JOIN</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
